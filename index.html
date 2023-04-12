@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Link the external stylesheet -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Load the external script and defer its execution until the document has finished parsing -->
+    <script src="mario.js" defer></script>
+  </head>
+  <body>
+    <br>
+    <main>
+      
+       <div class="slider-container">
+      <!-- The slider for selecting the pyramid height -->
+      <input type="range" id="height" class="slider" min="0" max="10" value="0"/>
+      <p class="value-height">Value: <span id="value"></span></p>
+
+      <!-- The dropdown menu for selecting the brick type -->
+      <label for="bricks" class="bricks">Choose a brick:</label>
+      <select name="bricks" id="dropdown" class="bricks">
+        <option class="brick-char" value="#">#</option>
+        <option class="brick-char" value="@">@</option>
+        <option class="brick-char" value="$">$</option>
+        <option class="brick-char" value="%">%</option>
+      </select>
+    </div>
+
+    <!-- The container for the pyramid -->
+    <div id="pyramid"></div>
+    </main>
+  </body>
+</html>

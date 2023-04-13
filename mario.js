@@ -26,6 +26,11 @@ function changeBrick(){
   return menu;
 }
 
+// Add event listener to the brickOption element to trigger changeBrick() on input
+brickOption.addEventListener('input', () => {
+  printPyramid(slide.value);
+});
+
 // Update the pyramid when the slider value changes
 slide.addEventListener('input', () => {
   const height = document.getElementById('height').value

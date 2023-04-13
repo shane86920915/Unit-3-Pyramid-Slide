@@ -9,7 +9,7 @@
 
 /* Styling for the entire body of the page */
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Courier New", monospace;
   text-align: center;
   padding: 0;
